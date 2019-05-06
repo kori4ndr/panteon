@@ -17,7 +17,7 @@ var browserSync = require("browser-sync").create();
 
 gulp.task('copy', function () {
   return gulp.src([
-      'src/fonts/**/*.{woff,woff2}',
+      'src/fonts/*.{woff,woff2}',
       'src/img/**',
       'src/js/**',
       'src/*.html'
@@ -109,7 +109,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', gulp.series(
-  gulp.parallel('html', 'css', 'images:dev', 'svgstore'),
+  gulp.parallel('clean', 'copy', 'html', 'css', 'images:dev', 'svgstore'),
   gulp.parallel('watch', 'serve')
 ));
 
