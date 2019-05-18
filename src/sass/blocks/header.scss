@@ -1,0 +1,16 @@
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header__wrapper {
+  @include container;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.logo-block__text-block {
+  color: #fff;
+}
