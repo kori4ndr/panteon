@@ -9,25 +9,34 @@
 </head>
 
 <body class="page">
-  <header class="page__header">
-    <div class="page__logo page__logo--header">
-      <h1 class="vh">Проект «Пантеон»</h1>
+  <h1 class="vh">Проект «Пантеон»</h1>
+  <header class="page__header header">
+    <div class="header__wrapper container">
+      <div class="header__logo-block logo-block logo-block--header">
+        <img class="logo-block__img" width="39" height="39" src="img/logo.png" alt="Пантеон логотип">
+        <h2 class="logo-block__text-block">
+          <span class="logo-block__text logo-block__text--big">Pantheon</span>
+          <span class="logo-block__text logo-block__text--small">project</span></h2>
+      </div>
+      <div class="header__menu menu">
+        <span class="menu__name">Меню</span>
+        <ul class="menu__list">
+        </ul>
+      </div>
     </div>
-
-    <ul class="page__menu menu">
-      <span class="menu__name">Меню</span>
-    </ul>
   </header>
   <main>
     <section class="page__intro intro">
-      <h2 class="intro__title">
-        Пункт назначения: Пантеон,<br> Марс
-      </h2>
-      <div class="intro__video">
-        <div class="intro__video-play">Смотреть видео</div>
-        <div class="intro__video-description">Первый город на планете Марс недалеко от горы Олимп</div>
+      <div class="intro__wrapper container">
+        <h2 class="intro__title">
+          Пункт назначения: Пантеон,<br> Марс
+        </h2>
+        <div class="intro__video">
+          <div class="intro__video-play">Смотреть видео</div>
+          <div class="intro__video-description">Первый город на планете Марс недалеко от горы Олимп</div>
+        </div>
+        <button class="intro__down-btn"></button>
       </div>
-      <button class="intro__down-btn"></button>
     </section>
     <section class="page__facts facts">
       <ul class="facts__list">

@@ -1,0 +1,28 @@
+.logo-block {
+  display: flex;
+  align-items: center;
+}
+
+.logo-block__img {
+  margin-right: 10px;
+}
+
+.logo-block__text-block {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.logo-block__text--big {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.logo-block__text--small {
+  font-size: 12.6px;
+  line-height: 16.8px;
+  font-weight: 100;
+
+}
