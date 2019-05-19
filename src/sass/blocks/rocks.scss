@@ -1,0 +1,41 @@
+.rocks {
+  background-color: #161336;
+}
+
+.rocks__title {
+  @include title-text;
+  color: #fff;
+}
+
+.rocks__toggle {
+  font-family: "OpenSans", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #908bb1;
+}
+
+.rocks__toggle--active {
+  font-weight: 700;
+  color: #fff;
+}
+
+.rocks__description {
+  display: none;
+  @include main-text;
+  color: #fff;
+}
+
+.rocks__description--active {
+  display: block;
+}
+
+.rocks__description-title {
+  @include subtitle-text;
+  color: #fff;
+}
+
+.rocks__text {
+  @include main-text;
+  color: #fff;
+}

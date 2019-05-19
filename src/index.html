@@ -9,7 +9,7 @@
 </head>
 
 <body class="page">
-  <h1 class="vh">Проект «Пантеон»</h1>
+  <h1>Проект «Пантеон»</h1>
   <header class="page__header header">
     <div class="header__wrapper">
       <div class="header__logo-block logo-block logo-block--header">
@@ -29,10 +29,11 @@
     <section class="page__intro intro">
       <div class="intro__wrapper">
         <h2 class="intro__title">
-          Пункт назначения: Пантеон,<br> Марс
+          <span class="title__text-destination">Пункт назначения:</span> <span
+            class="title__text-pantheon">Пантеон,</span><br> <span class="title__text-mars">Марс</span>
         </h2>
         <div class="intro__video">
-          <div class="intro__video-play">Смотреть видео</div>
+          <div class="intro__video-watch">Смотреть видео</div>
           <div class="intro__video-description">Первый город на планете Марс недалеко от горы Олимп</div>
         </div>
         <button class="intro__down-btn"></button>
@@ -92,7 +93,7 @@
         своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».
       </p>
       <p class="mask__text">
-        Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом
+        Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом
         для человечества в освоении Марса.
       </p>
       <img src="" alt="Илон Маск" class="mask__image">
@@ -102,7 +103,7 @@
       <h2 class="price__title">Стоимость перелёта</h2>
       <p class="price__text">
         Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов.
-        Маск стремится сократить эту цифру в 20 000 раз, что составит 500 000 долларов на человека.
+        Маск стремится сократить эту цифру в 20 000 раз, что составит <b>500 000 долларов</b> на человека.
       </p>
       <div class="price__away">
         <span class="price__cost">$500 k</span>
@@ -159,11 +160,11 @@
       <h2 class="subscribe__title">Деньги приготовил. Когда вылетаем?</h2>
       <form action="" method="POST" class="subscribe__form">
         <h3 class="subscribe__subtitle">Будь в курсе новостей</h3>
-        <input class="subscribe__input-btn" id="name" type="text" placeholder="Имя">
+        <input class="subscribe__input" id="name" type="text" placeholder="Имя">
         <label for="name" class="subscribe__label">Имя</label>
-        <input class="subscribe__input-btn" id="email" type="email" placeholder="E-mail">
+        <input class="subscribe__input" id="email" type="email" placeholder="E-mail">
         <label for="email" class="subscribe__label">E-mail</label>
-        <button class="subscribe__submit-btn" id="submit" type="submit">Подписаться</button>
+        <button class="subscribe__submit-button button" id="submit" type="submit">Подписаться</button>
       </form>
       <p class="subscribe__text">
         Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой
@@ -179,14 +180,17 @@
   <footer class="page__footer footer">
     <div class="page__logo page__logo--footer">
     </div>
-    <a href="#" class="footer__link">Подробнее о проекте</a>
-    <ul class="footer__social social-list">
-      <li class="social-list__item"><span class="social__text">Следуйте за нами</span></li>
-      <li class="social-list__item social-list__item--vk"><a href="#" class="social-list__link">VK</a></li>
-      <li class="social-list__item social-list__item--twitter"><a href="#" class="social-list__link">Twitter</a></li>
-      <li class="social-list__item social-list__item--facebook"><a href="#" class="social-list__link">Facebook</a></li>
-      <li class="social-list__item social-list__item--youtube"><a href="#" class="social-list__link">YouTube</a></li>
-    </ul>
+    <a href="#" class="footer__link link">Подробнее о проекте</a>
+    <div class="social">
+      <span class="social__text">Следуйте за нами</span>
+      <ul class="footer__social social-list">
+        <li class="social-list__item social-list__item--vk"><a href="#" class="social-list__link">VK</a></li>
+        <li class="social-list__item social-list__item--twitter"><a href="#" class="social-list__link">Twitter</a></li>
+        <li class="social-list__item social-list__item--facebook"><a href="#" class="social-list__link">Facebook</a>
+        </li>
+        <li class="social-list__item social-list__item--youtube"><a href="#" class="social-list__link">YouTube</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 

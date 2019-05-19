@@ -1,3 +1,22 @@
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Akrobat", "Tahoma", sans-serif;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+}
+
+p, ul, ol, h1, h2, h3, h4, h5, h6:hover {
+  cursor: default;
+}
+
+h1 {
+  @include vh;
 }

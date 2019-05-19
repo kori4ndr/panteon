@@ -1,0 +1,42 @@
+.organisation__title {
+  @include title-text;
+  color: $main-color;
+}
+
+.organisation__toggle {
+  font-family: "Akrobat", "Tahoma", sans-serif;
+  font-size: 0;
+  line-height: 24px;
+  font-weight: 700;
+  color: $main-color;
+}
+
+.organisation__toggle--active {
+  font-size: 16px;
+}
+
+.organisation__descripton {
+  display: none;
+}
+
+.organisation__descripton--active {
+  display: block;
+}
+
+.organisation__subtitle {
+  @include subtitle-text;
+  color: #000;
+}
+
+.organisation__text {
+  @include main-text;
+  color: #4c4c4c;
+}
+
+.organisation__button {
+  font-family: $text;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #fff;
+}

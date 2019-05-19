@@ -1,0 +1,30 @@
+.facts__head {
+  font-family: $text;
+  font-weight: 700;
+  font-size: 36px;
+  color: $main-color;
+}
+
+.facts__description {
+  font-family: $text;
+  font-size: 13px;
+  line-height: 18px;
+  color: #4c4c4c;
+}
+
+.facts__title {
+  @include title-text;
+  color: $main-color;
+}
+
+.facts__question {
+  @include subtitle-text;
+  color: #000;
+}
+
+.facts__answer {
+  font-family: $text;
+  font-weight: 300;
+  font-size: 14px;
+  color: #4c4c4c;
+}

@@ -1,0 +1,45 @@
+.intro {
+  width: 100%;
+  background: no-repeat url("../img/intro-background@320.jpg");
+  background-size: cover;
+  background-color: #911656;
+}
+
+.intro__wrapper {
+  padding-top: 145px;
+}
+
+.intro__title {
+  margin: 0;
+  color: #fff;
+}
+
+.title__text-destination {
+  font-family: $text;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.title__text-pantheon {
+  font-family: $text;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.title__text-mars {
+  font-family: $text;
+  font-weight: 900;
+  font-size: 133px;
+  text-transform: uppercase;
+}
+
+.intro__video-watch {
+  @include small-text;
+  color: #ffcfdf;
+  font-size: 0;
+}
+
+.intro__video-description {
+  @include small-text;
+  color: #ffcfdf;
+}

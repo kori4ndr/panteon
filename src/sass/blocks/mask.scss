@@ -1,0 +1,34 @@
+.mask__title {
+  @include title-text;
+  color: $main-color;
+}
+
+.mask__subtitle {
+  @include subtitle-text;
+  color: #000;
+}
+
+.mask__text {
+  @include main-text;
+  color: #4c4c4c;
+}
+
+.mask__quote {
+  font-family: $text;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $main-color;
+    &::before {
+      content: open-quote;
+      font-family: $text;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &::after {
+      display: none;
+    }
+}
+
+

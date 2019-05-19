@@ -1,0 +1,37 @@
+.price {
+  background-color: #772c87;
+}
+
+.price__title {
+  @include subtitle-text;
+  color: #fff;
+}
+
+.price__text {
+  @include main-text;
+  color: #fff;
+}
+
+.price__cost {
+  font-family: $text;
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.price__easy {
+  font-family: $text;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.price__button {
+  font-family: $text;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #c2529a;
+}
