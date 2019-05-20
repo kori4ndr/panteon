@@ -18,28 +18,29 @@
           <span class="logo-block__text logo-block__text--big">Pantheon</span>
           <span class="logo-block__text logo-block__text--small">project</span></h2>
       </div>
-      <div class="header__menu menu">
+      <div tabindex="1" class="header__menu menu">
         <span class="menu__name">Меню</span>
         <ul class="menu__list">
         </ul>
       </div>
     </div>
   </header>
-  <main>
+  <main class="page__main-content">
     <section class="page__intro intro">
       <div class="intro__wrapper">
         <h2 class="intro__title">
-          <span class="title__text-destination">Пункт назначения:</span> <span
-            class="title__text-pantheon">Пантеон,</span><br> <span class="title__text-mars">Марс</span>
+          <span class="intro__text-destination">Пункт назначения:</span> <span
+            class="intro__text-pantheon">Пантеон,</span><br> <span class="intro__text-mars">Марс</span>
         </h2>
-        <div class="intro__video">
-          <div class="intro__video-watch">Смотреть видео</div>
+        <div class="intro__video-block">
+          <video class="intro__video" width="214" height="139"></video>
+          <button class="intro__video-play">Смотреть видео</button>
           <div class="intro__video-description">Первый город на планете Марс недалеко от горы Олимп</div>
         </div>
-        <button class="intro__down-btn"></button>
+        <a class="intro__down-btn" href="index.html#facts">Перейти к фактам</a>
       </div>
     </section>
-    <section class="page__facts facts">
+    <section class="page__facts facts" id="facts">
       <ul class="facts__list">
         <li class="facts__list-item">
           <span class="facts__head">4</span>

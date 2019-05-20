@@ -1,3 +1,11 @@
 .page {
     display: grid;
 }
+
+.page h1 {
+  @include vh;
+}
+
+.page__main-content {
+  display: contents;
+}

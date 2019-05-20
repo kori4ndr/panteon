@@ -6,31 +6,94 @@
 }
 
 .intro__wrapper {
-  padding-top: 145px;
+  position: relative;
+  @include container;
+  padding-top: 140px;
+  padding-bottom: 165px;
+  display: grid;
+  grid-template-columns: 214px;
+  grid-template-rows: min-content min-content min-content;
+  justify-content: center;
 }
 
 .intro__title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   color: #fff;
+  text-transform: uppercase;
 }
 
-.title__text-destination {
+.intro__text-destination {
   font-family: $text;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 17px;
 }
 
-.title__text-pantheon {
+.intro__text-pantheon {
   font-family: $text;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
-.title__text-mars {
+.intro__text-mars {
   font-family: $text;
   font-weight: 900;
-  font-size: 133px;
-  text-transform: uppercase;
+  font-size: 95px;
+}
+
+.intro__video-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__video {
+  background: no-repeat url("../img/video-background@320.png");
+  background-size: cover;
+}
+
+.intro__video-play {
+  position: absolute;
+  left: calc(50% - 26px);
+  top: calc(50% - 26px);
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: $main-color;
+  font-size: 0;
+  transition: 0.2s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 6px);
+      left: calc(50% - 3.5px);
+      border: 7px solid transparent;
+      border-left: 12px solid #fff;
+    }
+
+    &:hover,
+    &:focus {
+      width: 56px;
+      height: 56px;
+      left: calc(50% - 28px);
+      top: calc(50% - 28px);
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: #bd1b47;
+    }
+
+    &:active::before {
+      opacity: 0.5;
+    }
 }
 
 .intro__video-watch {
@@ -40,6 +103,31 @@
 }
 
 .intro__video-description {
+  position: absolute;
+  width: 120px;
+  top: 130px;
+  right: 0px;
   @include small-text;
+  line-height: 18px;
   color: #ffcfdf;
+}
+
+.intro__down-btn {
+  position: absolute;
+  bottom: 27px;
+  left: calc(50% - 29.5px);
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background-color: $main-color;
+  font-size: 0;
+  transition: 0.2s;
+  opacity: 0.7;
+  background: no-repeat center url("../img/icon-btn-down.png"), $main-color;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      cursor: pointer;
+    }
 }
