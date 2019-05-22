@@ -1,19 +1,45 @@
-.mask__title {
+.musk__wrapper {
+  @include container;
+  padding-top: 25px;
+  padding-bottom: 190px;
+}
+
+.musk__title {
   @include title-text;
   color: $main-color;
 }
 
-.mask__subtitle {
+.musk__subtitle {
   @include subtitle-text;
   color: #000;
 }
 
-.mask__text {
+.musk__text {
   @include main-text;
+  margin-bottom: 30px;
   color: #4c4c4c;
 }
 
-.mask__quote {
+.musk__frame {
+  position: relative;
+  width: 165px;
+  height: 189px;
+  border: 10px solid $main-color;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.musk__photo {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.musk__quote {
+  display: block;
+  margin-bottom: 50px;
   font-family: $text;
   font-size: 18px;
   line-height: 24px;
