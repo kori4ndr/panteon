@@ -45,9 +45,11 @@
   width: 214px;
   margin: 0 auto;
   margin-bottom: 75px;
+  box-shadow: 0px 38px 40px 0px rgba(0,0,0,.48);;
 }
 
 .intro__video {
+  display: block;
   background: no-repeat url("../img/video-background@320.png");
   background-size: cover;
 }
