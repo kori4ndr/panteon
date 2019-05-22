@@ -1,0 +1,60 @@
+.musk__wrapper {
+  @include container;
+  padding-top: 25px;
+  padding-bottom: 210px;
+}
+
+.musk__title {
+  @include title-text;
+  color: $main-color;
+}
+
+.musk__subtitle {
+  @include subtitle-text;
+  color: #000;
+}
+
+.musk__text {
+  @include main-text;
+  margin-bottom: 30px;
+  color: #4c4c4c;
+}
+
+.musk__frame {
+  position: relative;
+  width: 165px;
+  height: 189px;
+  border: 10px solid $main-color;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.musk__photo {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.musk__quote {
+  display: block;
+  margin-bottom: 50px;
+  font-family: $text;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $main-color;
+    &::before {
+      content: open-quote;
+      font-family: $text;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &::after {
+      display: none;
+    }
+}
+
+
