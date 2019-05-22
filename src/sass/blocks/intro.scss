@@ -9,18 +9,14 @@
   position: relative;
   @include container;
   padding-top: 140px;
-  padding-bottom: 165px;
-  display: grid;
-  grid-template-columns: 214px;
-  grid-template-rows: min-content min-content min-content;
-  justify-content: center;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro__title {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0;
+  width: 214px;
+  margin: 0 auto;
   color: #fff;
   text-transform: uppercase;
 }
@@ -46,9 +42,9 @@
 
 .intro__video-block {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 214px;
+  margin: 0 auto;
+  margin-bottom: 75px;
 }
 
 .intro__video {
@@ -113,11 +109,10 @@
 }
 
 .intro__down-btn {
-  position: absolute;
-  bottom: 27px;
-  left: calc(50% - 29.5px);
+  display: block;
   width: 59px;
   height: 59px;
+  margin: 0 auto;
   border-radius: 50%;
   background-color: $main-color;
   font-size: 0;
