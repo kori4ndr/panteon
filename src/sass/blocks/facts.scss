@@ -4,7 +4,7 @@
 
 .facts__list {
   display: flex;
-  width: 100vw;
+  width: 100px;
   flex-direction: row;
   overflow: scroll;
   @include list-reset;

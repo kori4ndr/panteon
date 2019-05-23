@@ -6,7 +6,7 @@
 
 .price__wrapper {
   @include container;
-  padding-top: 260px;
+  padding-top: 220px;
   padding-bottom: 60px;
 }
 
@@ -16,7 +16,7 @@
   height: 289px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -400px;
+  margin-top: -360px;
 }
 
 .price__title {
@@ -92,6 +92,7 @@
     &:focus {
       background: linear-gradient(#fff 10%,40%,#d7d7d7 80%);
       box-shadow: none;
+      cursor: pointer;
     }
 
     &:active {
