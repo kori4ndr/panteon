@@ -1,33 +1,101 @@
 .rocks {
   background-color: #161336;
+  background-image: url("../img/rocks-background@320.jpg");
+  background-size: cover;
+}
+
+.rocks__wrapper {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  @include container;
 }
 
 .rocks__title {
+  margin-top: 0;
+  margin-bottom: 60px;
   @include title-text;
   color: #fff;
 }
 
+.rocks__about {
+  display: grid;
+}
+
+.rocks__toggles {
+  display: contents;
+}
+
 .rocks__toggle {
+  position: relative;
+  order: 2;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 53px;
+  text-align: left;
   font-family: "OpenSans", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #908bb1;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+    &::after {
+      position: absolute;
+      top: 8px;
+      right: 0px;
+      transform: rotate(90deg);
+      width: 15px;
+      height: 8px;
+      content: "";
+      background: no-repeat center url("../img/icon-rocks-arrow@320.png");
+      opacity: 0.5;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 }
 
 .rocks__toggle--active {
+  order: -1;
+  margin-bottom: 20px;
   font-weight: 700;
   color: #fff;
+
+    &::after {
+      position: absolute;
+      top: 8px;
+      right: 0px;
+      transform: none;
+      width: 16px;
+      height: 15px;
+      content: "";
+      background: no-repeat center url("../img/icon-rocks-arrow@320.png");
+      opacity: 1;
+  }
 }
 
 .rocks__description {
   display: none;
   @include main-text;
   color: #fff;
+  margin-bottom: 70px;
+
+    &::after {
+      content: none;
+    }
+}
+
+.rocks__description-title {
+  display: none;
 }
 
 .rocks__description--active {
   display: block;
+  order: 1;
 }
 
 .rocks__description-title {
@@ -37,5 +105,71 @@
 
 .rocks__text {
   @include main-text;
+  margin-bottom: 35px;
   color: #fff;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+}
+
+.rocks__video-block {
+  position: relative;
+  width: 291px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.rocks__video {
+  width: 100%;
+  height: 172px;
+  display: block;
+  background: no-repeat url("../img/rocks-video-bg@320.png");
+  background-size: cover;
+}
+
+.rocks__video-play {
+  position: absolute;
+  left: calc(50% - 26px);
+  top: calc(50% - 26px);
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: $main-color;
+  font-size: 0;
+  transition: 0.2s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 6px);
+      left: calc(50% - 3.5px);
+      border: 7px solid transparent;
+      border-left: 12px solid #fff;
+    }
+
+    &:hover,
+    &:focus {
+      width: 56px;
+      height: 56px;
+      left: calc(50% - 28px);
+      top: calc(50% - 28px);
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: #bd1b47;
+    }
+
+    &:active::before {
+      opacity: 0.5;
+    }
+}
+
+.rocks__video-watch {
+  @include small-text;
+  color: #ffcfdf;
+  font-size: 0;
 }
