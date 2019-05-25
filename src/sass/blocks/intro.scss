@@ -7,9 +7,9 @@
 
 .intro__wrapper {
   position: relative;
-  @include container;
-  padding-top: 140px;
-  padding-bottom: 30px;
+  min-width: 320px;
+  max-width: 1200px;
+  padding: 140px 15px 35px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -17,6 +17,7 @@
 .intro__title {
   width: 214px;
   margin: 0 auto;
+  margin-bottom: 15px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -38,6 +39,7 @@
   font-family: $text;
   font-weight: 900;
   font-size: 95px;
+  line-height: 90px;
 }
 
 .intro__video-block {
