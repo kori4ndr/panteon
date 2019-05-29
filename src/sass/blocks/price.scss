@@ -80,24 +80,4 @@
 
 .price__button {
   width: 100%;
-  height: 56px;
-  padding: 16px;
-  border-radius: 30px;
-  border: none;
-  background: #fff;
-  box-shadow: 0 0 50px 17px rgba(255, 255, 255, .48);
-  transition: 0.2s;
-
-    &:hover,
-    &:focus {
-      background: linear-gradient(#fff 10%,40%,#d7d7d7 80%);
-      box-shadow: none;
-      cursor: pointer;
-    }
-
-    &:active {
-      border: 1px solid #fff;
-      box-shadow: inset 0px 0px 7px 7px rgba(0, 0, 0, 0.35);
-      outline: none;
-    }
 }
