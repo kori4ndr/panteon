@@ -82,16 +82,20 @@
   border: none;
   border-bottom: 1px solid #fff;
   background-color: transparent;
+  font-family: $text;
+  @include small-text;
+  color: #fff;
   text-align: left;
+}
+
+.subscribe__input::placeholder {
+  font-family: $text;
+  @include small-text;
+  color: #fff;
 }
 
 .subscribe__input--email {
   margin-bottom: 60px;
-}
-
-.subscribe__input::placeholder {
-  @include main-text;
-  color: #fff;
 }
 
 .subscribe__submit-button {
