@@ -1,5 +1,6 @@
 .page {
-    display: grid;
+  position: relative;
+  display: grid;
 }
 
 .page h1 {
@@ -8,4 +9,15 @@
 
 .page__main-content {
   display: contents;
+}
+
+.page__header {
+  position: absolute;
+  width: 100%;
+}
+
+.page__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
