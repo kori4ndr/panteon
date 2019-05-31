@@ -9,6 +9,9 @@
 </head>
 
 <body class="page">
+  <div style="display:none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <h1>Проект «Пантеон»</h1>
   <header class="page__header header">
     <div class="header__wrapper">
@@ -16,7 +19,8 @@
         <img class="logo-block__img" width="39" height="39" src="img/logo.png" alt="Пантеон логотип">
         <h2 class="logo-block__text-block">
           <span class="logo-block__text logo-block__text--big">Pantheon</span>
-          <span class="logo-block__text logo-block__text--small">project</span></h2>
+          <span class="logo-block__text logo-block__text--small">project</span>
+        </h2>
       </div>
       <div tabindex="1" class="header__menu menu">
         <span class="menu__name">Меню</span>
@@ -223,18 +227,48 @@
     </section>
   </main>
   <footer class="page__footer footer">
-    <div class="page__logo page__logo--footer">
-    </div>
-    <a href="#" class="footer__link link">Подробнее о проекте</a>
-    <div class="social">
-      <span class="social__text">Следуйте за нами</span>
-      <ul class="footer__social social-list">
-        <li class="social-list__item social-list__item--vk"><a href="#" class="social-list__link">VK</a></li>
-        <li class="social-list__item social-list__item--twitter"><a href="#" class="social-list__link">Twitter</a></li>
-        <li class="social-list__item social-list__item--facebook"><a href="#" class="social-list__link">Facebook</a>
-        </li>
-        <li class="social-list__item social-list__item--youtube"><a href="#" class="social-list__link">YouTube</a></li>
-      </ul>
+    <div class="footer__wrapper">
+      <div class="footer__social">
+        <span class="footer__social-text">Следуйте за нами</span>
+        <ul class="footer__social-list social-list">
+          <li class="social-list__item social-list__item--vk">
+            <a href="#" class="social-list__link">
+              <svg width="34" height="34">
+                <use xlink:href="#icon-vk"></use>
+              </svg>VK
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--twitter">
+            <a href="#" class="social-list__link">
+              <svg width="34" height="34">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>Twitter
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--facebook">
+            <a href="#" class="social-list__link">
+              <svg width="34" height="34">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>Facebook
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--youtube">
+            <a href="#" class="social-list__link">
+              <svg width="34" height="34">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>YouTube
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="footer__link link">Подробнее о проекте</a>
+        <div class="footer__logo logo-block logo-block--footer">
+          <img class="logo-block__img logo-block__img--footer" width="32" height="32" src="img/logo-footer.svg" alt="Логотип Пантеон">
+          <h2 class="logo-block__text-block">
+            <span class="logo-block__text logo-block__text--big">Pantheon</span>
+            <span class="logo-block__text logo-block__text--small">project</span>
+          </h2>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
