@@ -1,0 +1,26 @@
+.social-list {
+  @include list-reset;
+  width: 168px;
+  font-size: 0;
+}
+
+.social-list__item {
+  display: inline-block;
+  margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+}
+
+.social-list__link {
+  display: block;
+  width: 34px;
+  height: 34px;
+  opacity: 0.8;
+  transition: 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+}

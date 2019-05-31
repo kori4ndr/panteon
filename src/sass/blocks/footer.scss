@@ -1,1 +1,34 @@
+.footer {
+  width: 100%;
+}
 
+.footer__wrapper {
+  padding-top: 55px;
+  padding-bottom: 35px;
+  @include container;
+}
+
+.footer__social-text {
+  display: none;
+}
+
+.footer__social-list {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.footer__logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__link {
+  display: block;
+  opacity: .5;
+  margin-bottom: 45px;
+  text-align: center;
+
+  &:hover {
+    opacity: 1;
+  }
+}
