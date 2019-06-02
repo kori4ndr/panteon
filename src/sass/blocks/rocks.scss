@@ -1,6 +1,6 @@
 .rocks {
   background-color: #161336;
-  background-image: url("../img/rocks-background@320.jpg");
+  background-image: url("../img/rocks-background-mobile.jpg");
   background-size: cover;
 }
 
@@ -50,8 +50,9 @@
       width: 15px;
       height: 8px;
       content: "";
-      background: no-repeat center url("../img/icon-rocks-arrow@320.png");
+      background: no-repeat center url("../img/rocks-arrow-icon.svg");
       opacity: 0.5;
+
     }
 
     &:last-child {
@@ -72,7 +73,7 @@
       width: 16px;
       height: 15px;
       content: "";
-      background: no-repeat center url("../img/icon-rocks-arrow@320.png");
+      background: no-repeat center url("../img/rocks-arrow-icon.svg");
       opacity: 1;
   }
 }
@@ -123,7 +124,7 @@
   width: 100%;
   height: 172px;
   display: block;
-  background: no-repeat url("../img/rocks-video-bg@320.png");
+  background: no-repeat url("../img/rocks-video-bg-mobile.png");
   background-size: cover;
 }
 

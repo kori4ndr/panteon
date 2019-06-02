@@ -21,14 +21,14 @@
   position: relative;
   padding-left: 29px;
 
-    &::before {
-      position: absolute;
-      bottom: 7px;
-      left: 6px;
-      content: "";
-      width: 3px;
-      height: 98%;
-      background-color: $main-color;
+  &::before {
+    position: absolute;
+    bottom: 7px;
+    left: 6px;
+    content: "";
+    width: 3px;
+    height: 98%;
+    background-color: $main-color;
   }
 }
 
@@ -81,25 +81,25 @@
 
 .organisation__toggle--accommodation {
   &::after {
-    background: no-repeat center url("../img/icon-teacup.png");
+    background: no-repeat center url("../img/teacup-icon.svg");
   }
 }
 
 .organisation__toggle--safety {
   &::after {
-    background: no-repeat center url("../img/icon-helmet.png");
+    background: no-repeat center url("../img/helmet-icon.svg");
   }
 }
 
 .organisation__toggle--research {
   &::after {
-    background: no-repeat center url("../img/icon-microscope.png");
+    background: no-repeat center url("../img/microscope-icon.svg");
   }
 }
 
 .organisation__toggle--photography {
   &::after {
-    background: no-repeat center url("../img/icon-photo.png");
+    background: no-repeat center url("../img/photo-icon.svg");
   }
 }
 
@@ -114,9 +114,9 @@
   order: -1;
   font-size: 16px;
 
-    &::before {
-      background-color: $main-color;
-    }
+  &::before {
+    background-color: $main-color;
+  }
 }
 
 .organisation__descriptons {
@@ -164,4 +164,16 @@
   font-weight: 700;
   color: #fff;
   cursor: pointer;
+  box-shadow: 0 0 30px 5px rgba(255, 150, 150, .48);
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:active {
+    color: #ffc7c7;
+    background-color: #b90032;
+  }
 }

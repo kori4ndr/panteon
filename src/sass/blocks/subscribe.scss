@@ -1,5 +1,5 @@
 .subscribe {
-  background-image: url("../img/subscribe-background@320.jpg");
+  background-image: url("../img/subscribe-background-mobile.jpg");
   background-size: cover;
   background-color: #881c65;
 }
@@ -7,7 +7,7 @@
 .subscribe__wrapper {
   @include container;
   padding-top: 45px;
-  padding-bottom: 233px;
+  padding-bottom: 260px;
 }
 
 .subscribe__text-block {
@@ -52,7 +52,7 @@
   padding-right: 30px;
   margin-left: -15px;
   margin-right: -15px;
-  background: url("../img/subscribe-form-bg@320.jpg");
+  background: url("../img/subscribe-form-bg-mobile.jpg");
   background-size: contain;
   background-color: #472d62;
 }
@@ -95,7 +95,7 @@
 }
 
 .subscribe__input--email {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .subscribe__submit-button {

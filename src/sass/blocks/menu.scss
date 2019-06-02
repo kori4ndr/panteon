@@ -1,10 +1,23 @@
 .menu {
   justify-self: end;
-  background: no-repeat url("../img/burger.png");
-  background-position: 0px 10px;
-    &:hover {
-      cursor: pointer;
-    }
+}
+
+.menu__toggle {
+  background: none;
+  border: none;
+
+  &:hover .menu__icon,
+  &:focus .menu__icon {
+    fill: $main-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu__icon {
+  fill: #fff;
 }
 
 .menu__name {

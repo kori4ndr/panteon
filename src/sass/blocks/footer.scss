@@ -1,10 +1,10 @@
 .footer {
   width: 100%;
+  height: 260px;
 }
 
 .footer__wrapper {
   padding-top: 55px;
-  padding-bottom: 35px;
   @include container;
 }
 

@@ -13,7 +13,9 @@
 
 .page__header {
   position: absolute;
-  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .page__footer {
