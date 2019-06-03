@@ -1,7 +1,6 @@
 .intro {
   width: 100%;
-  background: no-repeat url("../img/intro-background-mobile.jpg");
-  background-size: cover;
+  background: url("../img/square-pattern.png"), linear-gradient(to right,#71126e,#de1a42);
   background-color: #911656;
 }
 
@@ -12,6 +11,8 @@
   padding: 140px 15px 35px;
   margin-left: auto;
   margin-right: auto;
+  background: no-repeat url("../img/intro-background-mobile.jpg");
+  background-position: center;
 }
 
 .intro__title {
