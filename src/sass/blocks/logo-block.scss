@@ -1,6 +1,6 @@
 .logo-block {
   font-size: 0;
-  width: 140px;
+  width: 200px;
 }
 
 .logo-block--footer {
@@ -50,4 +50,21 @@
 
 .logo-block__img--footer {
   margin-right: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-block__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-block__text--big {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .logo-block__text--small {
+    font-size: 18.6px;
+    line-height: 18.6px;
+  }
 }
