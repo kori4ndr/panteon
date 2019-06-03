@@ -13,3 +13,9 @@
 .logo-block__text-block {
   color: #fff;
 }
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    padding-top: 25px;
+  }
+}
