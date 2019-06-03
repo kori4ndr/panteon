@@ -19,3 +19,23 @@
 .menu__name {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .menu__toggle {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu__name {
+    display: inline-flex;
+    margin-right: 10px;
+    font-family: $text;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .menu__icon {
+    display: inline-block;
+  }
+}
