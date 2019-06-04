@@ -1,6 +1,6 @@
 @mixin vh {
   border: 0;
-  clip-path: rect(0,0,0,0);
+  clip-path: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -21,6 +21,11 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) and (max-width: 1599px) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 }
 
 @mixin main-text {
