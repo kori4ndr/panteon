@@ -12,8 +12,8 @@
 
 .rocks__title {
   margin-top: 0;
-  margin-bottom: 50px;
   @include title-text;
+  margin-bottom: 50px;
   color: #fff;
 }
 
@@ -31,7 +31,7 @@
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 53px;
+  margin-bottom: 35px;
   text-align: left;
   font-family: "OpenSans", "Tahoma", sans-serif;
   font-size: 16px;
@@ -62,6 +62,7 @@
 
 .rocks__toggle--active {
   order: -1;
+  margin-bottom: 40px;
   font-weight: 700;
   color: #fff;
 
