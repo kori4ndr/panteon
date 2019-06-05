@@ -1,0 +1,179 @@
+.organisation {
+  background: url("../img/square-pattern.png");
+}
+
+.organisation__wrapper {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 65px;
+}
+
+.organisation__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  @include title-text;
+  color: $main-color;
+}
+
+.organisation__inner {
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  position: relative;
+  padding-left: 29px;
+
+  &::before {
+    position: absolute;
+    bottom: 7px;
+    left: 6px;
+    content: "";
+    width: 3px;
+    height: 98%;
+    background-color: $main-color;
+  }
+}
+
+.organisation__toggles {
+  display: contents;
+}
+
+.organisation__toggle {
+  position: relative;
+  order: 2;
+  height: 27px;
+  padding: 0;
+  padding-left: 47px;
+  margin-bottom: 32px;
+  border: none;
+  background: none;
+  text-align: left;
+  font-family: $text;
+  font-size: 0;
+  line-height: 24px;
+  font-weight: 700;
+  color: $main-color;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 3px solid $main-color;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 30px;
+    height: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.organisation__toggle--accommodation {
+  &::after {
+    background: no-repeat center url("../img/teacup-icon.svg");
+  }
+}
+
+.organisation__toggle--safety {
+  &::after {
+    background: no-repeat center url("../img/helmet-icon.svg");
+  }
+}
+
+.organisation__toggle--research {
+  &::after {
+    background: no-repeat center url("../img/microscope-icon.svg");
+  }
+}
+
+.organisation__toggle--photography {
+  &::after {
+    background: no-repeat center url("../img/photo-icon.svg");
+  }
+}
+
+.organisation__toggle--activity {
+  &::after {
+    background: no-repeat center url("../img/leaves-icon.svg");
+  }
+}
+
+.organisation__toggle--active {
+  margin-bottom: 25px;
+  order: -1;
+  font-size: 16px;
+
+  &::before {
+    background-color: $main-color;
+  }
+}
+
+.organisation__descriptons {
+  display: contents;
+}
+
+.organisation__descripton {
+  display: none;
+}
+
+.organisation__descripton--active {
+  margin-bottom: 40px;
+  order: 1;
+  display: block;
+}
+
+.organisation__subtitle {
+  margin-top: 0;
+  margin-bottom: 12px;
+  @include subtitle-text;
+  color: #000;
+}
+
+.organisation__image {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.organisation__text {
+  margin-top: 0;
+  margin-bottom: 55px;
+  @include main-text;
+  color: #4c4c4c;
+}
+
+.organisation__button {
+  border-radius: 25px;
+  border: none;
+  padding: 15px 35px;
+  background-color: $main-color;
+  font-family: $text;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 30px 5px rgba(255, 150, 150, .48);
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:active {
+    color: #ffc7c7;
+    background-color: #b90032;
+  }
+}

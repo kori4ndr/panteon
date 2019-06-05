@@ -1,0 +1,21 @@
+.menu__toggle {
+  background: none;
+  border: none;
+
+  &:hover .menu__icon,
+  &:focus .menu__icon {
+    fill: $main-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu__icon {
+  fill: #fff;
+}
+
+.menu__name {
+  display: none;
+}

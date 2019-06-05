@@ -1,24 +1,22 @@
 @font-face {
     font-weight: 100;
-    font-family: "sans-serif";
+    font-family: "Akrobat";
     font-style: normal;
     font-display: swap;
-    src:
-      url("../fonts/Akrobat-Thin.woff2") format("woff2");
+    src: url("../fonts/Akrobat-Thin.woff2") format("woff2");
   }
 
 @font-face {
     font-weight: 300;
-    font-family: "sans-serif";
+    font-family: "Akrobat";
     font-style: normal;
     font-display: swap;
-    src:
-      url("../fonts/Akrobat-Light.woff2") format("woff2");
+    src: url("../fonts/Akrobat-Light.woff2") format("woff2");
 }
-  
+
 @font-face {
     font-weight: 400;
-    font-family: "sans-serif";
+    font-family: "Akrobat";
     font-style: normal;
     font-display: swap;
     src: url("../fonts/Akrobat-Regular.woff2") format("woff2");
@@ -26,24 +24,40 @@
 
 @font-face {
     font-weight: 600;
-    font-family: "sans-serif";
+    font-family: "Akrobat";
     font-style: normal;
     font-display: swap;
     src: url("../fonts/Akrobat-SemiBold.woff2") format("woff2");
 }
-  
+
 @font-face {
     font-weight: 700;
-    font-family: "sans-serif";
+    font-family: "Akrobat";
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/opensansbold.woff2") format("woff2");
+    src: url("../fonts/Akrobat-Bold.woff2") format("woff2");
 }
- 
+
 @font-face {
     font-weight: 900;
-    font-family: "sans-serif";
+    font-family: "Akrobat";
     font-style: normal;
     font-display: swap;
     src: url("../fonts/Akrobat-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Akrobat";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Akrobat";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
 }

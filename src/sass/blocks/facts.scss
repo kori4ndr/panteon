@@ -1,0 +1,160 @@
+.facts {
+  background-color: #fff;
+  background-image: url("../img/facts-bg-mobile.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+@media (min-resolution: $retina-dppx) {
+  .facts {
+    background-image: url("../img/facts-bg-mobile@2x.png");
+    background-size: 750px auto;
+    background-position: center 93%;
+  }
+}
+
+.facts__wrapper {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 250px;
+}
+
+.facts__inner {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background: #fff5f8;
+}
+
+.facts__list {
+  width: 320px;
+  @include list-reset;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #fff5f8;
+  font-size: 0;
+}
+
+@media (min-width: 500px) {
+  .facts__list {
+    width: 500px;
+  }
+}
+
+.facts__list-item {
+  display: inline-block;
+  width: 153px;
+  vertical-align: top;
+  white-space: normal;
+  position: relative;
+  padding-right: 40px;
+  margin-right: 40px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 35px;
+    right: 0px;
+    width: 1px;
+    height: 49px;
+    background: #fbd6e0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.facts__head {
+  display: block;
+  margin-bottom: 12px;
+  text-align: left;
+  font-family: $text;
+  font-weight: 700;
+  font-size: 36px;
+  color: $main-color;
+}
+
+.facts__description {
+  display: block;
+  min-width: 120px;
+  font-family: $text;
+  font-size: 13px;
+  line-height: 18px;
+  color: #4c4c4c;
+}
+
+.facts__title {
+  @include title-text;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $main-color;
+}
+
+.facts__question {
+  @include subtitle-text;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.facts__answer {
+  font-family: $text;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  color: #4c4c4c;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.facts__separator {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.facts__earth {
+  position: absolute;
+  top: 95px;
+  left: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.facts__mars {
+  position: absolute;
+  top: 55px;
+  right: 55px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.facts__distance {
+  position: absolute;
+  top: 175px;
+  right: 115px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.facts__time {
+  position: absolute;
+  top: 175px;
+  right: 35px;
+  font-size: 24px;
+  font-weight: 300;
+}

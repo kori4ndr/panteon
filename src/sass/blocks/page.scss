@@ -1,0 +1,25 @@
+.page {
+  position: relative;
+  display: grid;
+}
+
+.page h1 {
+  @include vh;
+}
+
+.page__main-content {
+  display: contents;
+}
+
+.page__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.page__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

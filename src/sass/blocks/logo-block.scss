@@ -1,0 +1,53 @@
+.logo-block {
+  font-size: 0;
+  width: 140px;
+}
+
+.logo-block--footer {
+  width: 115px;
+  height: 32px;
+}
+
+.logo-block__img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.logo-block__text-block {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.logo-block__text {
+  display: block;
+}
+
+.logo-block__text--big {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-block__text--small {
+  font-size: 12.6px;
+  line-height: 12.6px;
+  font-weight: 100;
+
+}
+
+.logo-block--footer .logo-block__text--big {
+  margin-bottom: 3px;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.logo-block--footer .logo-block__text--small {
+  font-size: 11px;
+}
+
+.logo-block__img--footer {
+  margin-right: 5px;
+}

@@ -17,7 +17,7 @@ var browserSync = require("browser-sync").create();
 
 gulp.task('copy', function () {
   return gulp.src([
-      'src/fonts/*.{woff,woff2}',
+      'src/fonts/*.woff2',
       'src/img/**',
       'src/js/**',
       'src/*.html'
@@ -88,7 +88,7 @@ gulp.task('svgstore', function () {
 });
 
 gulp.task("clean-svg", function () {
-  return del("build/img/icon-*.svg");
+  return del("build/img/*icon-*.svg");
 });
 
 gulp.task('serve', function() {
@@ -109,10 +109,10 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', gulp.series(
-  gulp.parallel('clean', 'copy', 'html', 'css', 'images:dev', 'svgstore'),
+  gulp.series('clean', 'copy', 'images:dev', 'svgstore', 'clean-svg', 'html', 'css'),
   gulp.parallel('watch', 'serve')
 ));
 
 gulp.task('build', gulp.series(
-  gulp.series('clean', 'html', 'css', 'images:build', 'svgstore', 'clean-svg')
+  gulp.series('clean', 'copy', 'svgstore','images:build', 'clean-svg', 'html', 'css')
 ));

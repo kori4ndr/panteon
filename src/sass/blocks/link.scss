@@ -1,0 +1,8 @@
+.link {
+  @include main-text;
+  color: #fff;
+  transition: 0.2s;
+    &:hover {
+      text-decoration: none;
+    }
+}
