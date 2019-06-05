@@ -62,4 +62,47 @@
     }
 }
 
+@media (min-width: $tablet-width) {
+  .musk__wrapper {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: min-content;
+    padding-bottom: 60px;
+  }
 
+  .musk__title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .musk__subtitle {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .musk__frame {
+    margin: 0;
+    margin-left: auto;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+  }
+
+  .musk__quote {
+    margin-bottom: 25px;
+  }
+
+  .musk__text:first-child {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .musk__text:nth-child(6) {
+    grid-column: 1 / 3;
+    margin-bottom: 10px;
+  }
+
+  .musk__text:last-child {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+  }
+}
