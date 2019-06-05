@@ -47,6 +47,13 @@
   font-size: 30px;
   line-height: 42px;
   font-weight: 700;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: initial;
+    margin-bottom: 45px;
+  }
 }
 
 @mixin subtitle-text {

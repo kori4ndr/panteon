@@ -158,6 +158,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .facts {
+    min-height: 852px;
+    background-image: url("../img/facts-bg-tablet.png");
+    background-size: 100% auto;
+    background-position: center 535px;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .facts {
+      background-image: url("../img/facts-bg-tablet@2.png");
+      background-size: 1170px auto;
+      background-position: center 380px;
+    }
+  }
+
   .facts__inner {
     padding-top: 40px;
     padding-left: 25px;
@@ -176,11 +191,30 @@
     font-size: 48px;
   }
 
-  .facts__description {
-
+  .facts__recall {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
   }
 
-/*   .facts__list-item:nth-child(5) {
-    width: 178px;
-  } */
+  .facts__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .facts__question {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-bottom: 25px;
+  }
+
+  .facts__answer {
+    grid-column: 1 / 2;
+    margin-bottom: 20px;
+  }
+
+  .facts__answer:last-child {
+    grid-column: 2 / 3;
+    grid-row: 3 /4;
+  }
 }
