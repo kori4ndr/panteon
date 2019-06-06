@@ -5,8 +5,8 @@
 }
 
 .rocks__wrapper {
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 65px;
+  padding-bottom: 90px;
   @include container;
 }
 
@@ -42,22 +42,24 @@
   background: none;
   cursor: pointer;
 
-    &::after {
-      position: absolute;
-      top: 8px;
-      right: 0px;
-      transform: rotate(90deg);
-      width: 15px;
-      height: 8px;
-      content: "";
-      background: no-repeat center url("../img/rocks-arrow-icon.svg");
-      opacity: 0.5;
+  &::after {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    content: "";
+    transform: rotate(90deg);
+    width: 13px;
+    height: 13px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+    opacity: 0.5;
 
-    }
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .rocks__toggle--active {
@@ -66,28 +68,32 @@
   font-weight: 700;
   color: #fff;
 
-    &::after {
-      position: absolute;
-      top: 8px;
-      right: 0px;
-      transform: none;
-      width: 16px;
-      height: 15px;
-      content: "";
-      background: no-repeat center url("../img/rocks-arrow-icon.svg");
-      opacity: 1;
+  &::after {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    width: 13px;
+    height: 13px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(225deg);
+    opacity: 1;
   }
+}
+
+.rocks__descriptions {
+  order: 1;
+  margin-bottom: 100px;
 }
 
 .rocks__description {
   display: none;
   @include main-text;
   color: #fff;
-  margin-bottom: 70px;
 
-    &::after {
-      content: none;
-    }
+  &::after {
+    content: none;
+  }
 }
 
 .rocks__description-title {
@@ -96,7 +102,6 @@
 
 .rocks__description--active {
   display: block;
-  order: 1;
 }
 
 .rocks__description-title {
@@ -109,9 +114,9 @@
   margin-bottom: 35px;
   color: #fff;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .rocks__video-block {
@@ -142,35 +147,95 @@
   font-size: 0;
   transition: 0.2s;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: calc(50% - 6px);
-      left: calc(50% - 3.5px);
-      border: 7px solid transparent;
-      border-left: 12px solid #fff;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 6px);
+    left: calc(50% - 3.5px);
+    border: 7px solid transparent;
+    border-left: 12px solid #fff;
+  }
 
-    &:hover,
-    &:focus {
-      width: 56px;
-      height: 56px;
-      left: calc(50% - 28px);
-      top: calc(50% - 28px);
-      cursor: pointer;
-    }
+  &:hover,
+  &:focus {
+    width: 56px;
+    height: 56px;
+    left: calc(50% - 28px);
+    top: calc(50% - 28px);
+    cursor: pointer;
+  }
 
-    &:active {
-      background-color: #bd1b47;
-    }
+  &:active {
+    background-color: #bd1b47;
+  }
 
-    &:active::before {
-      opacity: 0.5;
-    }
+  &:active::before {
+    opacity: 0.5;
+  }
 }
 
 .rocks__video-watch {
   @include small-text;
   color: #ffcfdf;
   font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .rocks {
+    background: url("../img/rocks-background-tablet.jpg");
+    background-size: cover;
+  }
+
+  .rocks__wrapper {
+    padding-bottom: 90px;
+  }
+
+  .rocks__video-block {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .rocks__video {
+    height: auto;
+    background-image: url("../img/rocks-video-bg-tablet.png");
+  }
+
+  .rocks__about {
+    grid-template-columns: 31% 60%;
+    grid-template-rows: min-content;
+    justify-content: space-between;
+  }
+
+  .rocks__toggles {
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .rocks__toggle--active {
+    margin-bottom: 58px;
+
+    &::after {
+      width: 13px;
+      height: 13px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: rotate(-45deg);
+      filter: drop-shadow(5px 5px 0 rgba(255,255,255,.5)) drop-shadow(10px 10px 0px rgba(255,255,255,.2));
+    }
+  }
+
+  .rocks__descriptions {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+  }
+
+  .rocks__description {
+    margin-bottom: 0;
+  }
+
+  .rocks__description-title {
+    display: block;
+  }
 }
