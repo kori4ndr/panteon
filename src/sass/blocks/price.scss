@@ -21,6 +21,7 @@
 
 .price__title {
   @include subtitle-text;
+  margin-top: 25px;
   color: #fff;
 }
 
@@ -31,6 +32,7 @@
 }
 
 .price__cost {
+  margin-bottom: 15px;
   font-family: $text;
   font-weight: 100;
   font-size: 60px;
@@ -60,10 +62,6 @@
   display: block;
 }
 
-.price__cost {
-  margin-bottom: 25px;
-}
-
 .price__easy {
   position: relative;
   margin-bottom: 50px;
@@ -80,4 +78,61 @@
 
 .price__button {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    padding-top: 50px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 85px;
+    background: url("../img/square-pattern.png");
+  }
+
+  .price__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-template-rows: repeat(3, min-content);
+    padding-top: 35px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 30px;
+    background: no-repeat url("../img/price-background-tablet.jpg");
+    background-size: cover;
+  }
+
+  .price__image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: 253px;
+    height: 253px;
+    margin-top: -75px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+  }
+
+  .price__title {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .price__text {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .price__away {
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price__easy {
+    margin-right: 40px;
+  }
+
+  .price__button {
+    width: 200px;
+  }
 }

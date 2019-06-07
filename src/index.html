@@ -43,7 +43,7 @@
         </h2>
         <div class="intro__video-block">
           <video class="intro__video" width="214" height="139"></video>
-          <button class="intro__video-play">Смотреть видео</button>
+          <button class="intro__video-play"><span>Смотреть видео</span></button>
           <div class="intro__video-description">Первый город на планете Марс недалеко от горы Олимп</div>
         </div>
         <a class="intro__down-btn" href="index.html#facts">Перейти к фактам</a>
@@ -58,7 +58,7 @@
           </li>
           <li class="facts__list-item">
             <span class="facts__head">7</span>
-            <span class="facts__description">седьмая по размерам системы</span>
+            <span class="facts__description">седьмая по размерам планета солнечной системы системы</span>
           </li>
           <li class="facts__list-item">
             <span class="facts__head">10,7%</span>
@@ -182,7 +182,10 @@
           </div>
           <div class="organisation__descriptons">
             <div class="organisation__descripton organisation__descripton--active">
-              <img class="organisation__image" src="img/organisation-image-mobile.jpg" alt="Организация">
+              <picture>
+                <source media="(min-width: 765px)" srcset="img/organisation-image-tablet.jpg">
+                <img class="organisation__image" src="img/organisation-image-mobile.jpg" alt="Организация">
+              </picture>
               <h3 class="organisation__subtitle">Проживание</h3>
               <p class="organisation__text">
                 В основе жилых помещений лежат надувные компоненты - спальня, рабочая зона, гостиная, парник для
@@ -229,47 +232,47 @@
   </main>
   <footer class="page__footer footer">
     <div class="footer__wrapper">
-      <div class="footer__social">
-        <span class="footer__social-text">Следуйте за нами</span>
-        <ul class="footer__social-list social-list">
-          <li class="social-list__item social-list__item--vk">
-            <a href="#" class="social-list__link">
-              <svg width="34" height="34">
-                <use xlink:href="#icon-vk"></use>
-              </svg>VK
-            </a>
-          </li>
-          <li class="social-list__item social-list__item--twitter">
-            <a href="#" class="social-list__link">
-              <svg width="34" height="34">
-                <use xlink:href="#icon-twitter"></use>
-              </svg>Twitter
-            </a>
-          </li>
-          <li class="social-list__item social-list__item--facebook">
-            <a href="#" class="social-list__link">
-              <svg width="34" height="34">
-                <use xlink:href="#icon-facebook"></use>
-              </svg>Facebook
-            </a>
-          </li>
-          <li class="social-list__item social-list__item--youtube">
-            <a href="#" class="social-list__link">
-              <svg width="34" height="34">
-                <use xlink:href="#icon-youtube"></use>
-              </svg>YouTube
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="footer__link link">Подробнее о проекте</a>
-        <div class="footer__logo logo-block logo-block--footer">
-          <img class="logo-block__img logo-block__img--footer" width="32" height="32" src="img/logo-footer.svg"
-            alt="Логотип Пантеон">
-          <h2 class="logo-block__text-block">
-            <span class="logo-block__text logo-block__text--big">Pantheon</span>
-            <span class="logo-block__text logo-block__text--small">project</span>
-          </h2>
-        </div>
+      <ul class="footer__social-list social-list">
+        <li class="social-list__item social-list__item--text">
+            Следуйте за нами
+        </li>
+        <li class="social-list__item social-list__item--vk">
+          <a href="#" class="social-list__link">
+            <svg width="34" height="34">
+              <use xlink:href="#icon-vk"></use>
+            </svg>VK
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--twitter">
+          <a href="#" class="social-list__link">
+            <svg width="34" height="34">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>Twitter
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--facebook">
+          <a href="#" class="social-list__link">
+            <svg width="34" height="34">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>Facebook
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--youtube">
+          <a href="#" class="social-list__link">
+            <svg width="34" height="34">
+              <use xlink:href="#icon-youtube"></use>
+            </svg>YouTube
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="footer__link link">Подробнее о проекте</a>
+      <div class="footer__logo logo-block logo-block--footer">
+        <img class="logo-block__img logo-block__img--footer" width="32" height="32" src="img/logo-footer.svg"
+          alt="Логотип Пантеон">
+        <h2 class="logo-block__text-block">
+          <span class="logo-block__text logo-block__text--big">Pantheon</span>
+          <span class="logo-block__text logo-block__text--small">project</span>
+        </h2>
       </div>
     </div>
   </footer>

@@ -1,6 +1,6 @@
 @mixin vh {
   border: 0;
-  clip-path: rect(0,0,0,0);
+  clip-path: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -21,9 +21,15 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) and (max-width: 1599px) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 }
 
 @mixin main-text {
+  margin-top: 0;
   font-family: "Akrobat", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -42,10 +48,23 @@
   font-size: 30px;
   line-height: 42px;
   font-weight: 700;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: initial;
+    margin-bottom: 45px;
+  }
 }
 
 @mixin subtitle-text {
   font-family: "Akrobat", "Tahoma", sans-serif;
   font-size: 24px;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    line-height: initial;
+  }
 }

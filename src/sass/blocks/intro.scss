@@ -1,6 +1,6 @@
 .intro {
   width: 100%;
-  background: url("../img/square-pattern.png"), linear-gradient(to right,#71126e,#de1a42);
+  background: url("../img/square-pattern.png"), linear-gradient(to right, #71126e, #de1a42);
   background-color: #911656;
 }
 
@@ -48,13 +48,13 @@
   width: 214px;
   margin: 0 auto;
   margin-bottom: 75px;
-  box-shadow: 0px 38px 40px 0px rgba(0,0,0,.48);
 }
 
 .intro__video {
   display: block;
   background: no-repeat url("../img/intro-video-bg-mobile.png");
   background-size: cover;
+  box-shadow: 0px 38px 40px 0px rgba(0, 0, 0, .48);
 }
 
 .intro__video-play {
@@ -70,31 +70,31 @@
   font-size: 0;
   transition: 0.2s;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: calc(50% - 6px);
-      left: calc(50% - 3.5px);
-      border: 7px solid transparent;
-      border-left: 12px solid #fff;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 6px);
+    left: calc(50% - 3.5px);
+    border: 7px solid transparent;
+    border-left: 12px solid #fff;
+  }
 
-    &:hover,
-    &:focus {
-      width: 56px;
-      height: 56px;
-      left: calc(50% - 28px);
-      top: calc(50% - 28px);
-      cursor: pointer;
-    }
+  &:hover,
+  &:focus {
+    width: 56px;
+    height: 56px;
+    left: calc(50% - 28px);
+    top: calc(50% - 28px);
+    cursor: pointer;
+  }
 
-    &:active {
-      background-color: #bd1b47;
-    }
+  &:active {
+    background-color: #bd1b47;
+  }
 
-    &:active::before {
-      opacity: 0.5;
-    }
+  &:active::before {
+    opacity: 0.5;
+  }
 }
 
 .intro__video-watch {
@@ -125,9 +125,88 @@
   opacity: 0.7;
   background: no-repeat center url("../img/icon-btn-down.png"), $main-color;
 
+  &:hover,
+  &:focus {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background: no-repeat url("../img/intro-background-tablet.jpg"), linear-gradient(to right, #71126e, #de1a42);
+    background-size: cover;
+  }
+
+  .intro__wrapper {
+    padding-top: 260px;
+    background-image: none;
+  }
+
+  .intro__title {
+    width: 470px;
+  }
+
+  .intro__text-mars {
+    margin-left: -15px;
+    font-size: 215px;
+    line-height: 195px;
+  }
+
+  .intro__text-destination {
+    margin-right: 10px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .intro__text-pantheon {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .intro__video-block {
+    width: 516px;
+    height: 259px;
+    margin-bottom: 67px;
+  }
+
+  .intro__video {
+    width: 516px;
+    height: 259px;
+    margin: 0 auto;
+    background: no-repeat url("../img/intro-video-bg-tablet.png");
+    background-position: top center;
+  }
+
+  .intro__video-play {
+    left: calc(36% - 26px);
+    font-family: $text;
+    font-size: 16px;
+    font-weight: 600;
+
     &:hover,
     &:focus {
-      opacity: 1;
-      cursor: pointer;
+      left: calc(36% - 28px);
     }
+  }
+
+  .intro__video-description {
+    top: 230px;
+    right: 30px;
+  }
+
+  .intro__video-play span {
+    display: block;
+    margin-right: -180px;
+    color: #fff;
+  }
+
+  .intro__video-play:hover span {
+    color: $main-color;
+  }
+
+  .intro__down-btn {
+    width: 70px;
+    height: 70px;
+  }
 }

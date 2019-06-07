@@ -1,11 +1,17 @@
 .logo-block {
   font-size: 0;
-  width: 140px;
+  width: 200px;
 }
 
 .logo-block--footer {
   width: 115px;
   height: 32px;
+  opacity: 0.7;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .logo-block__img {
@@ -50,4 +56,26 @@
 
 .logo-block__img--footer {
   margin-right: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-block__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-block__text--big {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .logo-block__text--small {
+    font-size: 18.6px;
+    line-height: 18.6px;
+  }
+
+  .logo-block__img--footer {
+    width: 32px;
+    height: 32px;
+  }
 }
