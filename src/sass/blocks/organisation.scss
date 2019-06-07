@@ -201,6 +201,7 @@
   .organisation__toggles {
     display: flex;
     order: -1;
+    z-index: 10;
     width: 99.5%;
     justify-content: space-between;
     padding-top: 28px;
