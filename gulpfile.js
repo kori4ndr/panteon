@@ -12,7 +12,7 @@ var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var imagemin = require('gulp-imagemin');
 var svgstore = require('gulp-svgstore');
-var browserSync = require("browser-sync").create();
+var browserSync = require('browser-sync').create();
 
 
 gulp.task('copy', function () {
@@ -87,8 +87,8 @@ gulp.task('svgstore', function () {
       .pipe(gulp.dest('build/img'));
 });
 
-gulp.task("clean-svg", function () {
-  return del("build/img/*icon-*.svg");
+gulp.task('clean-svg', function () {
+  return del('build/img/*icon-*.svg');
 });
 
 gulp.task('serve', function() {

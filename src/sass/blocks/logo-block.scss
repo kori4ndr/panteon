@@ -6,6 +6,12 @@
 .logo-block--footer {
   width: 115px;
   height: 32px;
+  opacity: 0.7;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .logo-block__img {
@@ -66,5 +72,10 @@
   .logo-block__text--small {
     font-size: 18.6px;
     line-height: 18.6px;
+  }
+
+  .logo-block__img--footer {
+    width: 32px;
+    height: 32px;
   }
 }

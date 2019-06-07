@@ -8,10 +8,6 @@
   @include container;
 }
 
-.footer__social-text {
-  display: none;
-}
-
 .footer__social-list {
   margin: 0 auto;
   margin-bottom: 30px;
@@ -24,11 +20,29 @@
 
 .footer__link {
   display: block;
-  opacity: .5;
+  opacity: .7;
   margin-bottom: 45px;
   text-align: center;
 
   &:hover {
     opacity: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__link {
+    margin-bottom: 0;
   }
 }

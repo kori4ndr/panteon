@@ -2,25 +2,45 @@
   @include list-reset;
   width: 168px;
   font-size: 0;
+  vertical-align: top;
 }
 
 .social-list__item {
   display: inline-block;
   margin-right: 10px;
+  vertical-align: middle;
+  opacity: 0.8;
+  transition: 0.2s;
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:hover {
+    opacity: 1;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-list__item--text {
+  display: none;
 }
 
 .social-list__link {
   display: block;
   width: 34px;
   height: 34px;
-  opacity: 0.8;
-  transition: 0.2s;
+}
 
-    &:hover {
-      opacity: 1;
-    }
+@media (min-width: $tablet-width) {
+  .social-list {
+    min-width: 300px;
+    margin: 0;
+  }
+
+  .social-list__item--text {
+    display: inline-block;
+    @include small-text;
+    font-weight: 400;
+    color: #fff;
+  }
 }
