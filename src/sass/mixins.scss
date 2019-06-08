@@ -16,13 +16,13 @@
 
 @mixin container {
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: $tablet-width) and (max-width: 1599px) {
+  @media (min-width: $tablet-width) and (max-width: 1170px) {
     padding-left: 23px;
     padding-right: 23px;
   }

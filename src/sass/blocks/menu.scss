@@ -5,6 +5,7 @@
   &:hover .menu__icon,
   &:focus .menu__icon {
     fill: $main-color;
+    transition: 0.2s;
   }
 
   &:hover {
