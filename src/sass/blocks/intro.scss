@@ -210,3 +210,66 @@
     height: 70px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background: no-repeat center url("../img/intro-background-desktop.jpg");
+    background-size: cover;
+  }
+
+  .intro__wrapper {
+    max-width: 1170px;
+    padding-top: 215px;
+    padding-bottom: 67px;
+  }
+
+  .intro__title {
+    width: 600px;
+  }
+
+  .intro__text-destination,
+  .intro__text-pantheon {
+    margin: 0;
+    font-size: 47px;
+  }
+
+  .intro__text-mars {
+    font-size: 267px;
+    line-height: 225px;
+  }
+
+  .intro__video-block {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 25px;
+  }
+
+  .intro__video {
+    width: 580px;
+    height: 292px;
+    margin-left: -15px;
+    background: no-repeat url("../img/intro-video-bg-desktop.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .intro__video-description {
+    top: 105px;
+    right: -180px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 1px;
+      left: -140px;
+      top: 35px;
+      background-color: #ff9ebd;
+    }
+}
+
+  .intro__down-btn {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
