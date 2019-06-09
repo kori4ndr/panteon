@@ -65,15 +65,16 @@
 .price__easy {
   position: relative;
   margin-bottom: 50px;
-    &::before {
-      position: absolute;
-      top: 30px;
-      left: 0;
-      content: "";
-      width: 219px;
-      height: 1px;
-      background: #fff;
-    }
+
+  &::before {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    content: "";
+    width: 219px;
+    height: 1px;
+    background: #fff;
+  }
 }
 
 .price__button {
@@ -134,5 +135,46 @@
 
   .price__button {
     width: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding-top: 20px;
+    padding-bottom: 160px;
+  }
+
+  .price__wrapper {
+    grid-template-columns: 29% 61%;
+    grid-template-rows: repeat(4, min-content);
+    grid-column-gap: 65px;
+    background: no-repeat center url("../img/price-background-desktop.jpg");
+    background-size: 1140px auto;
+  }
+
+  .price__image {
+    width: 310px;
+    height: 310px;
+    margin: 0;
+    margin-top: -50px;
+    margin-left: 10px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+
+  .price__title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .price__text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-bottom: 45px;
+  }
+
+  .price__away {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
   }
 }
