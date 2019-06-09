@@ -218,3 +218,51 @@
     grid-row: 3 /4;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .facts {
+    background: no-repeat url("../img/facts-bg-desktop.png");
+    background-position: center 80%;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .facts {
+      background: no-repeat url("../img/facts-bg-desktop@2.png");
+      background-size: 1920px auto;
+      background-position: center 80%;
+    }
+  }
+
+  .facts__inner {
+    padding-left: 0;
+  }
+
+  .facts__wrapper {
+    padding-top: 65px;
+  }
+
+  .facts__list {
+    width: auto;
+    @include container;
+    display: flex;
+    flex-shrink: 1;
+    padding-bottom: 35px;
+    overflow-x: auto;
+  }
+
+  .facts__description {
+    width: 160px;
+  }
+
+  .facts__list-item--last .facts__description {
+    padding-right: 0;
+  }
+
+  .facts__description--temperature {
+    width: 95px;
+  }
+
+  .facts__recall {
+    grid-template-columns: 42% 54%;
+  }
+}

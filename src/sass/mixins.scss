@@ -55,6 +55,10 @@
     line-height: initial;
     margin-bottom: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+  }
 }
 
 @mixin subtitle-text {
