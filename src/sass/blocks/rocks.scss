@@ -221,7 +221,7 @@
       border-right: 2px solid #fff;
       border-bottom: 2px solid #fff;
       transform: rotate(-45deg);
-      filter: drop-shadow(5px 5px 0 rgba(255,255,255,.5)) drop-shadow(10px 10px 0px rgba(255,255,255,.2));
+      filter: drop-shadow(5px 5px 0 rgba(255, 255, 255, .5)) drop-shadow(10px 10px 0px rgba(255, 255, 255, .2));
     }
   }
 
@@ -237,5 +237,33 @@
 
   .rocks__description-title {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rocks {
+    background-image: url("../img/rocks-background-desktop.jpg");
+  }
+
+  .rocks__wrapper {
+    padding-top: 95px;
+    padding-bottom: 130px;
+  }
+
+  .rocks__title {
+    margin-bottom: 55px;
+    font-size: 53px;
+  }
+
+  .rocks__video {
+    background: url("../img/rocks-video-bg-desktop.png");
+  }
+
+  .rocks__video-block {
+    margin-bottom: 70px;
+  }
+
+  .rocks__about {
+    grid-template-columns: 19% 75%;
   }
 }
