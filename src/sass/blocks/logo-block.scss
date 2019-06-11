@@ -79,3 +79,23 @@
     height: 32px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo-block--footer {
+    width: 160px;
+  }
+
+  .logo-block__img--footer {
+    margin-right: 15px;
+  }
+
+  .logo-block--footer .logo-block__text--big {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .logo-block--footer .logo-block__text--small {
+    font-size: 14.6px;
+    line-height: 8.6px;
+  }
+}
