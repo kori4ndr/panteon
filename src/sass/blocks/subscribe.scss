@@ -142,3 +142,30 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .subscribe {
+    background: no-repeat url("../img/subscribe-background-desktop.jpg");
+    background-size: cover;
+  }
+
+  .subscribe__wrapper {
+    grid-template-columns: 30% 1fr;
+    grid-column-gap: 10%;
+    padding-top: 110px;
+  }
+
+  .subscribe__form {
+    padding-top: 0;
+    padding-left: 50px;
+    background: none;
+  }
+
+  .subscribe__input {
+    font-size: 18px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+}
