@@ -242,10 +242,9 @@
   }
 
   .facts__list {
-    width: auto;
-    @include container;
+    width: 1140px;
     display: flex;
-    flex-shrink: 1;
+    justify-content: space-between;
     padding-bottom: 35px;
     overflow-x: auto;
   }
