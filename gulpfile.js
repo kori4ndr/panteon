@@ -31,12 +31,12 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task("html", function () {
-  return gulp.src("src/*.html")
+gulp.task('html', function () {
+  return gulp.src('src/*.html')
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest('build'))
     .pipe(browserSync.stream());
 });
 
@@ -83,18 +83,18 @@ gulp.task('svgstore', function () {
       .pipe(svgstore({
         inlineSvg: true
       }))
-      .pipe(rename("sprite.svg"))
+      .pipe(rename('sprite.svg'))
       .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('clean-svg', function () {
-  return del('build/img/*icon-*.svg');
+  return del('build/img/icon-*.svg');
 });
 
 gulp.task('serve', function() {
   browserSync.init({
       server: {
-          baseDir: "build"
+          baseDir: 'build'
       }
   });
   browserSync.watch('build', browserSync.stream)
